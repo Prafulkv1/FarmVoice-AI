@@ -1,0 +1,41 @@
+/* ---------- App shell layout ---------- */
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); }
+.app-body { display: flex; flex: 1; align-items: stretch; min-height: 0; }
+.app-main {
+  flex: 1;
+  min-width: 0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reusable empty content placeholder — to be replaced by future modules */
+.empty-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+}
+.empty-card {
+  width: 100%;
+  max-width: 640px;
+  background: var(--white);
+  border: 1px dashed #cbd5e1;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+  padding: 36px 30px;
+  text-align: center;
+}
+.empty-icon { font-size: 34px; }
+.empty-card h2 { margin: 10px 0 8px; font-size: 22px; letter-spacing: -0.01em; }
+.empty-card p { margin: 0 auto; max-width: 46ch; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.empty-hint { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; margin-top: 16px; font-size: 12.5px; color: var(--muted); }
+.hint-chip {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--charcoal-soft);
+}
